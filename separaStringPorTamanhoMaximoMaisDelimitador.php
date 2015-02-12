@@ -1,5 +1,8 @@
 <?php
-
+/*
+* Função que quebra uma string grande(Possivelmente gigante) em duas. Útil para separar frases ou nomes 
+* longos para geração de documentos PDF, por exemplo.
+*/
 function separaStringPorTamanhoMaximoMaisDelimitador($string, $tamanhoMax, $delimitador){
 	if (strlen($string) <= $tamanhoMax){
 		return array($string);
