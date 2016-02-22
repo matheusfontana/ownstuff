@@ -106,6 +106,8 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+export EDITOR=vim
+
 #change prompt colors, plus, adds current branch
 function gitBranch(){
     git branch 2>/dev/null | grep -e '^*' | sed -E 's/^\* (.+)$/(\1) /'
